@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dstoolset"
+version = "0.1.0"
+description = "Reusable exploratory data analysis (EDA) helpers for data science/data analytics projects."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "JusDice", email = "dragon36011@gmail.com" }]
+keywords = ["eda", "data-science", "pandas", "seaborn", "visualization"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "pandas",
+    "seaborn",
+    "matplotlib",
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = ["build", "twine", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/JusDice/dstoolset"
+Repository = "https://github.com/JusDice/dstoolset"
+Issues = "https://github.com/JusDice/dstoolset/issues"
+
+# src/ layout: tell hatchling where the import package lives.
+[tool.hatch.build.targets.wheel]
+packages = ["src/dstoolset"]

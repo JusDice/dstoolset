@@ -12,17 +12,18 @@ license = { text = "MIT" }
 authors = [{ name = "JusDice", email = "dragon36011@gmail.com" }]
 keywords = ["eda", "data-science", "pandas", "seaborn", "visualization"]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Intended Audience :: Science/Research",
-    "Topic :: Scientific/Engineering :: Visualization",
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Intended Audience :: Science/Research",
+	"Topic :: Scientific/Engineering :: Visualization",
 ]
 dependencies = [
-    "pandas",
-    "seaborn",
-    "matplotlib",
-    "numpy",
+	"pandas",
+	"seaborn",
+	"matplotlib",
+	"numpy",
+	"scipy",
 ]
 
 [project.optional-dependencies]

@@ -29,7 +29,7 @@ from .data_exploration import (
 	categorize_numeric,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 # Public surface. Keep this list in sync as you add helpers.
 __all__ = [
